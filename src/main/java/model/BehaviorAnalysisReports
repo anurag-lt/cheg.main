@@ -1,0 +1,132 @@
+package model;
+
+import java.time.LocalDate;
+
+/**
+ * The {@code BehaviorAnalysisReports} class represents the behavior analysis reports entity.
+ * It contains information related to the analysis of user behavior including purchase patterns,
+ * preferences, and activities.
+ */
+public class BehaviorAnalysisReports {
+
+    /**
+     * The unique identifier for the behavior analysis report.
+     */
+    private Long id;
+
+    /**
+     * The report generation date.
+     */
+    private LocalDate reportDate;
+
+    /**
+     * An instance of {@code UserActivities} representing the activities of the user.
+     */
+    private UserActivities userActivities;
+
+    /**
+     * An instance of {@code CustomerPurchasePatterns} representing the purchase patterns of the customer.
+     */
+    private CustomerPurchasePatterns customerPurchasePatterns;
+
+    /**
+     * An instance of {@code Recommendations} representing the recommendations based on user behavior.
+     */
+    private Recommendations recommendations;
+
+    /**
+     * Constructor for creating a {@code BehaviorAnalysisReports} instance.
+     */
+    public BehaviorAnalysisReports() {
+    }
+
+    /**
+     * Gets the unique identifier for the behavior analysis report.
+     *
+     * @return the report id
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * Sets the unique identifier for the behavior analysis report.
+     *
+     * @param id the new report id
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * Gets the report generation date.
+     *
+     * @return the report date
+     */
+    public LocalDate getReportDate() {
+        return reportDate;
+    }
+
+    /**
+     * Sets the report generation date.
+     *
+     * @param reportDate the new report date
+     */
+    public void setReportDate(LocalDate reportDate) {
+        this.reportDate = reportDate;
+    }
+
+    /**
+     * Gets the activities of the user.
+     *
+     * @return the user activities
+     */
+    public UserActivities getUserActivities() {
+        return userActivities;
+    }
+
+    /**
+     * Sets the activities of the user.
+     *
+     * @param userActivities the new user activities
+     */
+    public void setUserActivities(UserActivities userActivities) {
+        this.userActivities = userActivities;
+    }
+
+    /**
+     * Gets the purchase patterns of the customer.
+     *
+     * @return the customer purchase patterns
+     */
+    public CustomerPurchasePatterns getCustomerPurchasePatterns() {
+        return customerPurchasePatterns;
+    }
+
+    /**
+     * Sets the purchase patterns of the customer.
+     *
+     * @param customerPurchasePatterns the new customer purchase patterns
+     */
+    public void setCustomerPurchasePatterns(CustomerPurchasePatterns customerPurchasePatterns) {
+        this.customerPurchasePatterns = customerPurchasePatterns;
+    }
+
+    /**
+     * Gets the recommendations based on user behavior.
+     *
+     * @return the recommendations
+     */
+    public Recommendations getRecommendations() {
+        return recommendations;
+    }
+
+    /**
+     * Sets the recommendations based on user behavior.
+     *
+     * @param recommendations the new recommendations
+     */
+    public void setRecommendations(Recommendations recommendations) {
+        this.recommendations = recommendations;
+    }
+}
